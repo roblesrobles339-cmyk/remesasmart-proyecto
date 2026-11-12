@@ -1,0 +1,19 @@
+# Archivos de compilacion de .NET
+**/bin/
+**/obj/
+
+# Dependencias de JavaScript
+**/node_modules/
+
+# Archivos de Visual Studio
+.vs/
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+**/appsettings.Development.json
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
