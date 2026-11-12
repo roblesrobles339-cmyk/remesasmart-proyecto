@@ -1,4 +1,4 @@
-using Microsoft.EntityFremeworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace RemesaSmart.Api.Data
 {
@@ -6,8 +6,6 @@ namespace RemesaSmart.Api.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-        
         }
-        //aqeui agregaremos los DbSet para las tablas mas adelante
     }
 }

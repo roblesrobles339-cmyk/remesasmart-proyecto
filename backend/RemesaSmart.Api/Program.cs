@@ -1,17 +1,22 @@
+using Microsoft.EntityFrameworkCore;
+using RemesaSmart.Api.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+
+// Registro del DbContext para PostgreSQL
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection") ?? 
+    "Server=localhost;Port=5432;Database=remesasmart_db;User Id=postgres;Password=postgres;"));
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    // app.MapOpenApi(); // Comentado temporalmente si no se usa OpenAPI/.NET 8 genérico
 }
 
 app.UseHttpsRedirection();

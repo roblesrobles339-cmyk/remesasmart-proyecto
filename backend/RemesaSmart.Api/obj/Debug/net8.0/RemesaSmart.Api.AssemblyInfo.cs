@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RemesaSmart.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef890de33524db436affd7d71f813bda649d3181")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c4b22d6a1cbb8c529616620bdf88e74058bf927")]
 [assembly: System.Reflection.AssemblyProductAttribute("RemesaSmart.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RemesaSmart.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
