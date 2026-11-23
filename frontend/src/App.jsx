@@ -9,6 +9,7 @@ function App() {
   useEffect(() => {
     api.get('/WeatherForecast')
       .then((response) => {
+        console.log(response.data)
         setWeather(response.data)
       })
   }, [])

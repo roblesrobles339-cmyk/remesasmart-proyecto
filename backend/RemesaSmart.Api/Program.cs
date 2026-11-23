@@ -29,7 +29,6 @@ if (app.Environment.IsDevelopment())
     // app.MapOpenApi(); // Comentado temporalmente si no se usa OpenAPI/.NET 8 genérico
 }
 
-//😂
 
 app.UseHttpsRedirection();
 

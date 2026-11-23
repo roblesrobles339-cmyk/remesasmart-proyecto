@@ -9,5 +9,7 @@ namespace RemesaSmart.Api.Data
             
         }
         // Aquei vamos a definir los Dbsets nuestas entidades
+        public DbSet<Gasto> gastos {get; set;}
+        
     }
 }
