@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace RemesaSmart.Api.Data
+namespace RemesaSmart.Api.Models
 {
     public class ApplicationDbContext : DbContext
     {
@@ -8,8 +8,10 @@ namespace RemesaSmart.Api.Data
         {
             
         }
-        // Aquei vamos a definir los Dbsets nuestas entidades
-        public DbSet<Gasto> gastos {get; set;}
-        
+        // Aqui estan definidos los Dbsets nuestas entidades
+        public DbSet<Usuario> Usuarios {get; set;}
+        public DbSet<Hogar> Hogares {get; set;}
+        public DbSet<Categoria> Categorias {get; set;}
+        public DbSet<Gasto> Gastos {get;set;}
     }
 }
